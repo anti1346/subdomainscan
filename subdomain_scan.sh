@@ -43,8 +43,8 @@ function my_install(){
 
 function my_run(){
 	SUBLIST3R=$WORK_DIR/Sublist3r/sublist3r.py
-	KNOCKPY=/bin/knockpy
-	SSLYZE=/bin/sslyze
+	KNOCKPY=`which knockpy`
+	SSLYZE=`which sslyze`
 
 	## result.txt, subdomain_list.txt
 	if [ -f result.txt ]; then
